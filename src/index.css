@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+@layer base {
+  @apply bg-white text-gray-900 dark:bg-gray-800 dark:text-gray-200;
+  
+  body {
+    @apply overscroll-none;
+    
+  }
+
+}
+@theme {
+  --font-display: "Poppins", "sans-serif"; 
+}
