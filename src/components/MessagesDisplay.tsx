@@ -72,14 +72,15 @@ const MessagesDisplay = () => {
 
   return (
     <section id="messages" className="py-12 px-4 sm:px-6 lg:px-8 ">
-      <motion.h2
-        className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-6 md:mb-10 bg-gradient-to-r from-pink-700 via-rose-400 to-red-800 bg-clip-text text-transparent drop-shadow-sm"
-        initial={{ opacity: 0, y: -10 }}
+      <motion.div
+        className="text-center mb-8 md:mb-12 flex  items-center justify-center "
+        initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.9, ease: "easeOut" }}
-      >
-        Heartfelt Wishes & Memories ❤️
-      </motion.h2>
+        transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}>
+          <h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-6 md:mb-10 bg-gradient-to-r from-pink-700 via-rose-400 to-red-800 bg-clip-text text-transparent drop-shadow-sm pr-4'>Heartfelt Wishes and Memories</h2> <h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-6 md:mb-10 '>❤️</h2>
+
+        </motion.div>
+      
 
       <div className="max-w-7xl mx-auto mb-8 flex justify-end">
         <div className="relative">

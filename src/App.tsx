@@ -36,9 +36,13 @@ const HomePageContent = () => (
       <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold drop-shadow-xl bg-gradient-to-r from-red-400 via-pink-400 to-orange-400 bg-clip-text text-transparent">
         <Countdown targetDate="2025-06-16T10:30:00+05:30" />
       </div>
-      <p className="text-xl sm:text-2xl mt-4 md:mt-6 bg-gradient-to-r from-teal-200 via-green-100 to-emerald-300 bg-clip-text text-transparent">
-        Until their Nikkah! 🌙
+      <div className='flex items-center justify-center'>
+        <p className="text-xl sm:text-2xl mt-4 md:mt-6 bg-gradient-to-r from-teal-200 via-green-100 to-emerald-300 bg-clip-text text-transparent pr-3">
+        Until their Nikkah! 
       </p>
+      <p className='text-xl sm:text-2xl mt-4 md:mt-6 '> 🌙</p>
+      </div>
+      
     </motion.section>
     
     <motion.section 
