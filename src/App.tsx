@@ -5,25 +5,36 @@ import Footer from './components/footer';
 import MessageInputForm from './components/MessageInputForm';
 import { Toaster } from 'react-hot-toast';
 import { motion } from "framer-motion";
+import AkLogo from './assets/ak.png'; // Assuming your image is named ak.png and in src/assets
 
 // HomePage content is now directly part of App or could be a simple component
 const HomePageContent = () => (
   <>
-    <motion.header 
-      className="text-center py-10 md:py-16"
+    <motion.header
+      className="text-center py-10 md:py-16 relative" // Added relative positioning for potential absolute positioning of elements if needed
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
     >
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold drop-shadow-md bg-gradient-to-r from-pink-300 via-rose-200 to-red-300 bg-clip-text text-transparent mb-4">
-        Celebrating Akram & Khathija
-      </h2>
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold drop-shadow-lg bg-gradient-to-r from-sky-300 via-cyan-200 to-indigo-400 bg-clip-text text-transparent" id="countdown" >
-        A Shower of Blessings
-      </h1>
-      <p className="text-lg sm:text-xl mt-6 md:mt-8 bg-gradient-to-r from-blue-200 via-indigo-100 to-sky-200 bg-clip-text text-transparent" id="count-down"> {/* Ensure ID matches Navbar target */}
-        Join us in sending heartfelt wishes to the happy couple as they begin their beautiful journey together.
-      </p>
+      <div className="flex flex-col items-center justify-center"> {/* Flex container for centering */}
+        <motion.img
+          src={AkLogo}
+          alt="Akram & Khathija Initials"
+          className="h-80 w-auto md:h-40 mb-4 md:mb-6" // Adjusted height classes
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+        />
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold drop-shadow-md bg-gradient-to-r from-pink-300 via-rose-200 to-red-300 bg-clip-text text-transparent mb-4">
+          Celebrating Akram & Khathija
+        </h2>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold drop-shadow-lg bg-gradient-to-r from-sky-300 via-cyan-200 to-indigo-400 bg-clip-text text-transparent" id="countdown" >
+          A Shower of Blessings
+        </h1>
+        <p className="text-lg sm:text-xl mt-6 md:mt-8 bg-gradient-to-r from-blue-200 via-indigo-100 to-sky-200 bg-clip-text text-transparent" id="count-down"> {/* Ensure ID matches Navbar target */}
+          Join us in sending heartfelt wishes to the happy couple as they begin their beautiful journey together.
+        </p>
+      </div>
     </motion.header>
 
     <motion.section 
