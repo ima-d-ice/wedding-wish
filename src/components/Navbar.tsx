@@ -21,7 +21,7 @@ const Navbar = () => {
           onClick={() => handleScrollTo('count-down')} // Or scroll to top: window.scrollTo({ top: 0, behavior: 'smooth' }); setIsOpen(false);
           className="text-xl font-bold bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent"
         >
-          EventApp
+          AK Nikkah
         </button>
 
         {/* Desktop Menu */}
